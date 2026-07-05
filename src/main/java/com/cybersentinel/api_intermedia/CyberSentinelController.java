@@ -10,7 +10,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/prediccion")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://frontend-cyber-sentinel.vercel.app"})
 public class CyberSentinelController {
 
     private final RestTemplate restTemplate = new RestTemplate();
